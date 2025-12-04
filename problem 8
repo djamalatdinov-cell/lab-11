@@ -1,0 +1,12 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main() {
+    ifstream in("text.txt");
+    string s;
+    int cnt = 0;
+    while (getline(in, s)) cnt++;
+    cout << cnt;
+}
