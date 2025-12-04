@@ -1,0 +1,10 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    ofstream out("log.txt", ios::app);
+    out << n << ' ';
+}
