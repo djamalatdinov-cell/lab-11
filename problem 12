@@ -1,0 +1,11 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ifstream in("data.txt");
+    long long x;
+    int cnt = 0;
+    while (in >> x) if (x < 0) cnt++;
+    cout << cnt;
+}
