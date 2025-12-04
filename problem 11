@@ -1,0 +1,7 @@
+#include <fstream>
+using namespace std;
+
+int main() {
+    ofstream out("report.txt");
+    out << "File handling in C++ is easy!";
+}
